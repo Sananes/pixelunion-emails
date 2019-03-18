@@ -1,0 +1,201 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles
+body,
+html,
+.body {
+  background: #f3f3f3 !important;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+  line-height: $header-line-height;
+}
+
+h3, h4, h5 {
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: $header-font-color;
+}
+
+a.no-color {
+  color: $anchor-color-secondary;
+
+  &:hover {
+    color: $anchor-color-hover-secondary;
+  }
+
+  &:active, &:visited {
+    color: $anchor-color-secondary;
+  }
+}
+
+.heading-no-margin {
+  margin-bottom: 5px;
+}
+
+table.container > tbody > tr > td {
+  padding-left: 80px;
+  padding-right: 80px;
+
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container.header {
+  background: #f3f3f3;
+}
+
+.body-drip {
+  border-top: 8px solid #663399;
+}
+
+// Full Width Headers
+.header {
+  background: #8a8a8a;
+}
+
+.hr-divider {
+  color: $divider-color;
+  border-color: $divider-color;
+  border-style: solid;
+  margin-left: $global-margin;
+  margin-right: $global-margin;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.divider {
+  border-top: 12px solid $primary-color;
+}
+
+.button.text-button {
+  &:hover a {
+    color: $primary-color;
+  }
+}
+
+table.body .columns {
+  @media only screen and (max-width: #{$global-breakpoint}) {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+}
+
+table.button.text-button table td {
+  background: none !important;
+  font-weight: bold;
+  display: inline-block;
+  border: none;
+  color: $primary-color;
+
+  img {
+    color: $primary-color;
+    margin: 4px 0 3px 2px;
+    Margin: 4px 0 3px 2px;
+    clear: initial !important;
+    display: inline-block;
+  }
+
+  a {
+    padding: 0;
+    color: $primary-color;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
+.subheader .spacer {
+  border-top: 1px solid $divider-color;
+  border-bottom: none;
+  outline: 0;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+p.intro-text {
+  font-size: $h4-font-size !important;
+}
+
+.footer {
+  p {
+    color: $dark-gray;
+    text-align: center;
+  }
+
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+  }
+}
+
+// Social Media
+table.button.facebook table td {
+  background: #3B5998 !important;
+  border-color: #3B5998;
+}
+
+table.button.twitter table td {
+  background: #1daced !important;
+  border-color: #1daced;
+}
+
+table.button.google table td {
+  background: #DB4A39 !important;
+  border-color: #DB4A39;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}
+
+
+.blog-post {
+}
+
+.featured-products {
+
+  .featured-title {
+    margin-bottom: $header-margin-bottom / 3.5;
+    Margin-bottom: $header-margin-bottom / 3.5;
+  }
+
+  .featured-description {
+    color: $dark-gray;
+    margin-bottom: $header-margin-bottom / 3;
+    Margin-bottom: $header-margin-bottom / 3;
+  }
+}
+.spotlight-title {
+  font-weight: bold;
+
+  a {
+    font-weight: bold;
+    line-height: 1.3;
+  }
+}
+.spotlight-text {
+  font-size: 18px;
+}
